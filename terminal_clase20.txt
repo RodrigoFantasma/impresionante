@@ -1,0 +1,93 @@
+Rodrmart@Rodrigo MINGW64 ~
+$ cd DEsktop
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop
+$ cd platzi
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi
+$ cd 2.git
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git
+$ mkdir impresionante_20
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git
+$ cd impresionante_20
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20
+$ git init
+Initialized empty Git repository in C:/Users/Rodrmart/Desktop/Platzi/2.Git/impresionante_20/.git/
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20 (master)
+$ git remote add origin https://github.com/RodMartinez/impresionante.git
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20 (master)
+$ gir remote -v
+bash: gir: command not found
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20 (master)
+$ git remote add upstream https://github.com/RodrigoFantasma/impresionante.git
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20 (master)
+$ gir remote - v
+bash: gir: command not found
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20 (master)
+$ git remote -v
+origin  https://github.com/RodMartinez/impresionante.git (fetch)
+origin  https://github.com/RodMartinez/impresionante.git (push)
+upstream        https://github.com/RodrigoFantasma/impresionante.git (fetch)
+upstream        https://github.com/RodrigoFantasma/impresionante.git (push)
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20 (master)
+$ git fetch origin
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/RodMartinez/impresionante
+ * [new branch]      master     -> origin/master
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20 (master)
+$ git merge origin/master
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20 (master)
+$ git fetch upstream
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/RodrigoFantasma/impresionante
+ * [new branch]      master     -> upstream/master
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20 (master)
+$ git merge upstream/master
+Updating 94f78ff..6b364e6
+Fast-forward
+ amazing.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 amazing.txt
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20 (master)
+$ touch propuesta.txt
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20 (master)
+$ git add -A
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20 (master)
+$ git commit -m "Creación propuesta.txt"
+[master 594afe6] Creación propuesta.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 propuesta.txt
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20 (master)
+$ git push origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 552 bytes | 0 bytes/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/RodMartinez/impresionante.git
+   94f78ff..594afe6  master -> master
+
+Rodrmart@Rodrigo MINGW64 ~/DEsktop/platzi/2.git/impresionante_20 (master)
+$
